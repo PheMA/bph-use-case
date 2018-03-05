@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QualityMeasureDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:qdm="urn:hhs-qdm:hqmf-r2-extensions:v1">
+  <typeId root="2.16.840.1.113883.1.3" extension="POQM_MT000001UV03" />
+  <templateId>
+    <item root="2.16.840.1.113883.10.20.28.1.1" />
+  </templateId>
+  <id root="2.16.840.1.113883.3.100.1" extension="56bd7684934b5d8120a12e4b" />
+  <code code="57024-2" codeSystem="2.16.840.1.113883.6.1"/>
+  <title value="BPH Use Case"/>
+  <text value=""/>
+  <statusCode code="completed" />
+  <setId root="2.16.840.1.113883.3.100.1" extension="56bd7684934b5d8120a12e4b" />
+  <versionNumber value="v1"/>
+  <author typeCode="AUT">
+    <responsibleParty classCode="ASSIGNED" />
+  </author>
+  <custodian typeCode="CST">
+    <responsibleParty classCode="ASSIGNED" />
+  </custodian>
+  <controlVariable>
+    <measurePeriod>
+      <code code="MSRTP" codeSystem="2.16.840.1.113883.3.560">
+        <displayName value="Measurement period"/>
+      </code>
+      <value xsi:type="PIVL_TS">
+        <phase lowClosed="true" highClosed="true">
+                <low value="190001010000" />
+                <high value="201602251817" />
+        </phase>
+      </value>
+    </measurePeriod>
+  </controlVariable>
+    <subjectOf>
+    <measureAttribute classCode="OBS" moodCode="EVN">
+        <code  codeSystem="2.16.840.1.113883.5.4" code="MSRSCORE">
+      <displayName value="Measure Scoring"/>
+ 
+  </code>
+
+        <value xsi:type="CD" codeSystem="2.16.840.1.113883.1.11.20367" code="COHORT">
+      <displayName value="Cohort"/>
+ 
+  </value>
+
+    </measureAttribute>
+  </subjectOf>
+
+    <subjectOf>
+    <measureAttribute classCode="OBS" moodCode="EVN">
+        <code  codeSystem="2.16.840.1.113883.5.4" code="MSRTYPE">
+      <displayName value="Measure Type"/>
+ 
+  </code>
+
+        <value xsi:type="CD" codeSystem="2.16.840.1.113883.1.11.20368" code="OUTCOME">
+      <displayName value="Outcome"/>
+ 
+  </value>
+
+    </measureAttribute>
+  </subjectOf>
+
+    <subjectOf>
+    <measureAttribute classCode="OBS" moodCode="EVN">
+        <code  codeSystem="2.16.840.1.113883.5.4" code="REF">
+      <displayName value="Reference"/>
+ 
+  </code>
+
+        <value  value="Sample document"/>
+
+    </measureAttribute>
+  </subjectOf>
+
+  <component>
+    <dataCriteriaSection>
+      <templateId>
+        <item root="2.16.840.1.113883.10.20.28.2.2" />
+      </templateId>
+      <code code="57025-9" codeSystem="2.16.840.1.113883.6.1"/>
+      <title value="Data Criteria Section"/>
+      <text value="This section describes the data criteria."/>
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Active_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__39"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.1" identifierName="diagnosis, active template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__39"/>
+                    <text value="Diagnosis, Active: Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          <statusCode code="active"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.25">
+              <displayName value="Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__39"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Resolved_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__53"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.19" identifierName="diagnosis, resolved template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__53"/>
+                    <text value="Diagnosis, Resolved: Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          <statusCode code="resolved"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.25">
+              <displayName value="Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__53"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Inactive_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__46"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.18" identifierName="diagnosis, inactive template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Inactive_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__46"/>
+                    <text value="Diagnosis, Inactive: Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          <statusCode code="inactive"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.25">
+              <displayName value="Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Inactive_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__46"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_95"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.19" identifierName="diagnosis, resolved template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_95"/>
+                    <text value="Diagnosis, Resolved: Benign Prostatetic Hyperplasia"/>
+          <statusCode code="resolved"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.28">
+              <displayName value="Benign Prostatetic Hyperplasia"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+                    <temporallyRelatedInformation typeCode="SBS">
+
+            <qdm:temporalInformation precisionUnit="d">
+              
+                <qdm:delta   lowClosed="true">
+  <low  value="1" unit="d"/>
+<high nullFlavor="PINF"/>  </qdm:delta>
+
+            </qdm:temporalInformation>
+
+                        <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_109"/>
+            </criteriaReference>
+
+          </temporallyRelatedInformation>
+
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_95"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_109"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.19" identifierName="diagnosis, resolved template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_109"/>
+                    <text value="Diagnosis, Resolved: Benign Prostatetic Hyperplasia"/>
+          <statusCode code="resolved"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.28">
+              <displayName value="Benign Prostatetic Hyperplasia"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_109"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Patient_Characteristic__Birthdate__Not_specified__167"/>
+        <observationCriteria moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.54" identifierName="patient characteristic, birthdate template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Birthdate__Not_specified__167"/>
+                    <code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1"
+            code="21112-8">
+              <displayName value="Patient Characteristic, Birthdate"/>
+          </code>
+
+                    <text value="Patient Characteristic, Birthdate: (Not specified)"/>
+          
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="patient_characteristic_birthdate"/>
+            </criteriaReference>
+          </definition>
+                    <temporallyRelatedInformation typeCode="SBS">
+
+            <qdm:temporalInformation precisionUnit="d">
+              
+                <qdm:delta   lowClosed="true">
+  <low  value="40" unit="a"/>
+<high nullFlavor="PINF"/>  </qdm:delta>
+
+            </qdm:temporalInformation>
+
+                        <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Clinical_Trial_Participant_Biobank_specimens_available_for_research_17"/>
+            </criteriaReference>
+
+          </temporallyRelatedInformation>
+
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Birthdate__Not_specified__167"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_74"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.1" identifierName="diagnosis, active template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_74"/>
+                    <text value="Diagnosis, Active: Benign Prostatetic Hyperplasia"/>
+          <statusCode code="active"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.28">
+              <displayName value="Benign Prostatetic Hyperplasia"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+                    <temporallyRelatedInformation typeCode="SBS">
+
+            <qdm:temporalInformation precisionUnit="d">
+              
+                <qdm:delta   lowClosed="true">
+  <low  value="1" unit="d"/>
+<high nullFlavor="PINF"/>  </qdm:delta>
+
+            </qdm:temporalInformation>
+
+                        <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_81"/>
+            </criteriaReference>
+
+          </temporallyRelatedInformation>
+
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_74"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_81"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.1" identifierName="diagnosis, active template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_81"/>
+                    <text value="Diagnosis, Active: Benign Prostatetic Hyperplasia"/>
+          <statusCode code="active"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.28">
+              <displayName value="Benign Prostatetic Hyperplasia"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_81"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Medication__Administered_BPH_MEDICATIONS_125"/>
+        <substanceAdministrationCriteria moodCode="EVN" classCode="SBADM">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.45" identifierName="medication, administered template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Medication__Administered_BPH_MEDICATIONS_125"/>
+                    <text value="Medication, Administered: BPH MEDICATIONS"/>
+          <statusCode code="administered"/>
+          
+          
+          <participation typeCode="CSM">
+            <role classCode="MANU">
+                <playingManufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                            <code valueSet="2.16.840.1.113762.1.4.1053.30">
+              <displayName value="BPH MEDICATIONS"/>
+          </code>
+
+                </playingManufacturedMaterial>
+            </role>
+          </participation>
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="SBADM">
+              <id root="2.16.840.1.113883.3.100.1" extension="medication"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Medication__Administered_BPH_MEDICATIONS_125"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </substanceAdministrationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Procedure__Performed_BPH_related_surgery_118"/>
+        <procedureCriteria moodCode="EVN" classCode="PROC">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.67" identifierName="procedure, performed template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Procedure__Performed_BPH_related_surgery_118"/>
+                    <code xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.29">
+              <displayName value="BPH related surgery"/>
+          </code>
+
+                    <text value="Procedure, Performed: BPH related surgery"/>
+          <statusCode code="performed"/>
+          
+          
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="PROC">
+              <id root="2.16.840.1.113883.3.100.1" extension="procedure"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Procedure__Performed_BPH_related_surgery_118"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </procedureCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Patient_Characteristic__Sex_Male_6"/>
+        <observationCriteria moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.55" identifierName="patient characteristic, gender template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Sex_Male_6"/>
+                    <code xsi:type="CD" valueSet="2.16.840.1.113883.3.560.100.1">
+              <displayName value="Male"/>
+          </code>
+
+                    <text value="Patient Characteristic, Sex: Male"/>
+          
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="patient_characteristic_gender"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Sex_Male_6"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Patient_Characteristic__Clinical_Trial_Participant_Biobank_specimens_available_for_research_17"/>
+        <observationCriteria moodCode="EVN" classCode="OBS">
+          
+          <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Clinical_Trial_Participant_Biobank_specimens_available_for_research_17"/>
+                    <code xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1026.1">
+              <displayName value="Biobank specimens available for research"/>
+          </code>
+
+                    <text value="Patient Characteristic, Clinical Trial Participant: Biobank specimens available for research"/>
+          
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="patient_characteristic_clinical_trial_participant"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Clinical_Trial_Participant_Biobank_specimens_available_for_research_17"/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Active_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__39"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.1" identifierName="diagnosis, active template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__39"/>
+                    <text value="Diagnosis, Active: Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          <statusCode code="active"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.25">
+              <displayName value="Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Resolved_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__53"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.19" identifierName="diagnosis, resolved template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__53"/>
+                    <text value="Diagnosis, Resolved: Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          <statusCode code="resolved"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.25">
+              <displayName value="Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Inactive_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__46"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.18" identifierName="diagnosis, inactive template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Inactive_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__46"/>
+                    <text value="Diagnosis, Inactive: Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          <statusCode code="inactive"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.25">
+              <displayName value="Prostate &amp; Bladder Cancer (as exclusion criteria for benign prostatetic hyperplasia phenotype)"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_95"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.19" identifierName="diagnosis, resolved template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_95"/>
+                    <text value="Diagnosis, Resolved: Benign Prostatetic Hyperplasia"/>
+          <statusCode code="resolved"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.28">
+              <displayName value="Benign Prostatetic Hyperplasia"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+                    <temporallyRelatedInformation typeCode="SBS">
+
+            <qdm:temporalInformation precisionUnit="d">
+              
+                <qdm:delta   lowClosed="true">
+  <low  value="1" unit="d"/>
+<high nullFlavor="PINF"/>  </qdm:delta>
+
+            </qdm:temporalInformation>
+
+                        <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_109"/>
+            </criteriaReference>
+
+          </temporallyRelatedInformation>
+
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_109"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.19" identifierName="diagnosis, resolved template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_109"/>
+                    <text value="Diagnosis, Resolved: Benign Prostatetic Hyperplasia"/>
+          <statusCode code="resolved"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.28">
+              <displayName value="Benign Prostatetic Hyperplasia"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Patient_Characteristic__Birthdate__Not_specified__167"/>
+        <observationCriteria moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.54" identifierName="patient characteristic, birthdate template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Birthdate__Not_specified__167"/>
+                    <code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1"
+            code="21112-8">
+              <displayName value="Patient Characteristic, Birthdate"/>
+          </code>
+
+                    <text value="Patient Characteristic, Birthdate: (Not specified)"/>
+          
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="patient_characteristic_birthdate"/>
+            </criteriaReference>
+          </definition>
+                    <temporallyRelatedInformation typeCode="SBS">
+
+            <qdm:temporalInformation precisionUnit="d">
+              
+                <qdm:delta   lowClosed="true">
+  <low  value="40" unit="a"/>
+<high nullFlavor="PINF"/>  </qdm:delta>
+
+            </qdm:temporalInformation>
+
+                        <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Clinical_Trial_Participant_Biobank_specimens_available_for_research_17"/>
+            </criteriaReference>
+
+          </temporallyRelatedInformation>
+
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_74"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.1" identifierName="diagnosis, active template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_74"/>
+                    <text value="Diagnosis, Active: Benign Prostatetic Hyperplasia"/>
+          <statusCode code="active"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.28">
+              <displayName value="Benign Prostatetic Hyperplasia"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+                    <temporallyRelatedInformation typeCode="SBS">
+
+            <qdm:temporalInformation precisionUnit="d">
+              
+                <qdm:delta   lowClosed="true">
+  <low  value="1" unit="d"/>
+<high nullFlavor="PINF"/>  </qdm:delta>
+
+            </qdm:temporalInformation>
+
+                        <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_81"/>
+            </criteriaReference>
+
+          </temporallyRelatedInformation>
+
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_81"/>
+        <observationCriteria  moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.1" identifierName="diagnosis, active template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_81"/>
+                    <text value="Diagnosis, Active: Benign Prostatetic Hyperplasia"/>
+          <statusCode code="active"/>
+          
+          
+                    <value xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.28">
+              <displayName value="Benign Prostatetic Hyperplasia"/>
+          </value>
+
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="diagnosis"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Medication__Administered_BPH_MEDICATIONS_125"/>
+        <substanceAdministrationCriteria moodCode="EVN" classCode="SBADM">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.45" identifierName="medication, administered template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Medication__Administered_BPH_MEDICATIONS_125"/>
+                    <text value="Medication, Administered: BPH MEDICATIONS"/>
+          <statusCode code="administered"/>
+          
+          
+          <participation typeCode="CSM">
+            <role classCode="MANU">
+                <playingManufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                            <code valueSet="2.16.840.1.113762.1.4.1053.30">
+              <displayName value="BPH MEDICATIONS"/>
+          </code>
+
+                </playingManufacturedMaterial>
+            </role>
+          </participation>
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="SBADM">
+              <id root="2.16.840.1.113883.3.100.1" extension="medication"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </substanceAdministrationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Procedure__Performed_BPH_related_surgery_118"/>
+        <procedureCriteria moodCode="EVN" classCode="PROC">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.67" identifierName="procedure, performed template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Procedure__Performed_BPH_related_surgery_118"/>
+                    <code xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1053.29">
+              <displayName value="BPH related surgery"/>
+          </code>
+
+                    <text value="Procedure, Performed: BPH related surgery"/>
+          <statusCode code="performed"/>
+          
+          
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="PROC">
+              <id root="2.16.840.1.113883.3.100.1" extension="procedure"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+          
+        </procedureCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Patient_Characteristic__Sex_Male_6"/>
+        <observationCriteria moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.10.20.28.3.55" identifierName="patient characteristic, gender template"/>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Sex_Male_6"/>
+                    <code xsi:type="CD" valueSet="2.16.840.1.113883.3.560.100.1">
+              <displayName value="Male"/>
+          </code>
+
+                    <text value="Patient Characteristic, Sex: Male"/>
+          
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="patient_characteristic_gender"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+        </observationCriteria>
+      </entry>
+
+            <entry typeCode="DRIV">
+        <localVariableName value="Patient_Characteristic__Clinical_Trial_Participant_Biobank_specimens_available_for_research_17"/>
+        <observationCriteria moodCode="EVN" classCode="OBS">
+                    <templateId>
+            <item root="2.16.840.1.113883.3.100.1.1" identifierName="Source data criteria template"/>
+          </templateId>
+
+          <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Clinical_Trial_Participant_Biobank_specimens_available_for_research_17"/>
+                    <code xsi:type="CD" valueSet="2.16.840.1.113762.1.4.1026.1">
+              <displayName value="Biobank specimens available for research"/>
+          </code>
+
+                    <text value="Patient Characteristic, Clinical Trial Participant: Biobank specimens available for research"/>
+          
+          <definition>
+            <criteriaReference moodCode="EVN" classCode="OBS">
+              <id root="2.16.840.1.113883.3.100.1" extension="patient_characteristic_clinical_trial_participant"/>
+            </criteriaReference>
+          </definition>
+          
+                    <outboundRelationship typeCode="SUBJ">
+            <subsetCode code="SOURCE"/>
+            <criteriaReference classCode="OBS" moodCode="EVN">
+              <id root="2.16.840.1.113883.3.100.1" extension=""/>
+            </criteriaReference>
+          </outboundRelationship>
+          
+        </observationCriteria>
+      </entry>
+
+    </dataCriteriaSection>
+  </component>
+  <component>
+    <populationCriteriaSection>
+      <templateId>
+        <item root="2.16.840.1.113883.10.20.28.2.1"/>
+      </templateId>
+      <id root="2.16.840.1.113883.3.100.1" extension="Population0"/>
+      <code code="57026-7" codeSystem="2.16.840.1.113883.6.1"/>
+      <title value=""/>
+      <text value="This section describes the Initial Patient Population, Numerator, Denominator, Denominator Exceptions, and Measure Populations"/>
+            <component typeCode="COMP">
+        <initialPopulationCriteria  classCode="OBS" moodCode="EVN" isCriterionInd="true">
+          <id root="c75181d0-73eb-11de-8a39-0800200c9a66"
+            extension=""/>
+          <code codeSystem="2.16.840.1.113883.5.1063"
+              codeSystemName="HL7 Observation Value"
+              code="IPP">
+            <displayName value="Initial Patient Population"/>
+          </code>
+          <precondition typeCode="PRCN">
+  <allTrue>
+    <precondition typeCode="PRCN">
+  <allFalse>
+    <precondition typeCode="PRCN">
+  <atLeastOneTrue>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="OBS">
+      <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__39"/>
+    </criteriaReference>
+</precondition>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="OBS">
+      <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__53"/>
+    </criteriaReference>
+</precondition>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="OBS">
+      <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Inactive_Prostate___Bladder_Cancer__as_exclusion_criteria_for_benign_prostatetic_hyperplasia_phenotype__46"/>
+    </criteriaReference>
+</precondition>
+  </atLeastOneTrue>
+</precondition>
+  </allFalse>
+</precondition>
+    <precondition typeCode="PRCN">
+  <allTrue>
+    <precondition typeCode="PRCN">
+  <atLeastOneTrue>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="OBS">
+      <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_95"/>
+    </criteriaReference>
+</precondition>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="OBS">
+      <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Resolved_Benign_Prostatetic_Hyperplasia_109"/>
+    </criteriaReference>
+</precondition>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="OBS">
+      <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_74"/>
+    </criteriaReference>
+</precondition>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="OBS">
+      <id root="2.16.840.1.113883.3.100.1" extension="Diagnosis__Active_Benign_Prostatetic_Hyperplasia_81"/>
+    </criteriaReference>
+</precondition>
+  </atLeastOneTrue>
+</precondition>
+    <precondition typeCode="PRCN">
+  <atLeastOneTrue>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="SBADM">
+      <id root="2.16.840.1.113883.3.100.1" extension="Medication__Administered_BPH_MEDICATIONS_125"/>
+    </criteriaReference>
+</precondition>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="PROC">
+      <id root="2.16.840.1.113883.3.100.1" extension="Procedure__Performed_BPH_related_surgery_118"/>
+    </criteriaReference>
+</precondition>
+  </atLeastOneTrue>
+</precondition>
+  </allTrue>
+</precondition>
+    <precondition typeCode="PRCN">
+  <allTrue>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="OBS">
+      <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Sex_Male_6"/>
+    </criteriaReference>
+</precondition>
+    <precondition typeCode="PRCN">
+    <criteriaReference moodCode="EVN" classCode="OBS">
+      <id root="2.16.840.1.113883.3.100.1" extension="Patient_Characteristic__Birthdate__Not_specified__167"/>
+    </criteriaReference>
+</precondition>
+  </allTrue>
+</precondition>
+  </allTrue>
+</precondition>
+        </initialPopulationCriteria>
+      </component>
+
+      
+      
+      
+      
+    </populationCriteriaSection>
+  </component>
+ 
+</QualityMeasureDocument>
